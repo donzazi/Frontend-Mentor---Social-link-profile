@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: hsl(0, 0%, 8%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* === Container === */
+.container {
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 12px;
+  padding: 30px 20px;
+  width: 100%;
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* === Profile Image === */
+img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+/* === Name & Location === */
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.green {
+  color: hsl(75, 94%, 57%);
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+/* === Bio === */
+p {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* === Social Link Boxes === */
+.container div {
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+  padding: 12px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.container div:hover {
+  background-color: hsl(75, 94%, 57%);
+  cursor: pointer;
+}
+
+/* === Desktop Enhancement === */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 400px;
+  }
+
+  img {
+    width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
